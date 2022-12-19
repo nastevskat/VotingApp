@@ -24,7 +24,7 @@ public class AddActivity extends AppCompatActivity {
         option4_input = findViewById(R.id.option4_input);
         add_button = findViewById(R.id.add_button);
         add_button.setOnClickListener(new View.OnClickListener() {
-            @Override
+            @Override //ako nesto ne mi raboti ovoj del go ima na pocetok
             public void onClick(View view) {
                 DBHelperPoll DB = new DBHelperPoll(AddActivity.this);
                 DB.addPoll(question_input.getText().toString().trim(), option1_input.getText().toString().trim(), option2_input.getText().toString().trim(),option3_input.getText().toString().trim(),option4_input.getText().toString().trim());
